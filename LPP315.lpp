@@ -1,0 +1,50 @@
+REAL A,B,CA
+CARACTER C, opcion3
+entero base,h,area,opcion2, J, lado1, lado2, altura, radio, clave
+CADENA [25] e
+CADENA [25] nombre1
+INICIO
+		escriba "Ingrese su nombre: "
+		llamar nueva_linea
+		lea e
+		ESCRIBA "ingrese un caracter del menu"
+		LLAMAR Nueva_Linea
+		ESCRIBA "S para la Suma"
+		LLAMAR Nueva_Linea
+		ESCRIBA "R para la Resta"
+		LLAMAR Nueva_Linea
+	LEA C
+	CASO C
+	'S','s': 
+		ESCRIBA "vamos a la suma"
+		LLAMAR Nueva_linea
+		ESCRIBA "ingrese el primer numero: "
+		LLAMAR Nueva_linea
+		LEA A
+		LLAMAR Nueva_linea 
+		ESCRIBA "ingrese el seghundo numero: "
+		LLAMAR Nueva_linea
+		LEA B 
+		LLAMAR Nueva_linea 
+		CA<-A+B
+		ESCRIBA "la suma es: ",CA
+	'R','r': 
+		ESCRIBA "vamos a restar"
+		LLAMAR Nueva_linea
+		ESCRIBA "ingrese el primer numero: "
+		LLAMAR Nueva_linea
+		LEA A
+		LLAMAR Nueva_linea 
+		ESCRIBA "ingrese el seghundo numero: "
+		LLAMAR Nueva_linea
+		LEA B 
+		LLAMAR Nueva_linea 
+		CA<-A-B
+		ESCRIBA "la resta es:",CA
+	SINO:
+		ESCRIBA "opcion invalida"
+		llamar nueva_linea
+	FIN CASO
+	fin 
+	escriba " Su nombre es: ", e
+FIN

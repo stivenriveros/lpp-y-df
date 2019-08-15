@@ -1,0 +1,153 @@
+REAL A,B,CA
+CARACTER C, opcion3
+entero base,h,area,opcion2, J, lado1, lado2, altura, radio, clave
+CADENA [25] e
+CADENA [25] nombre1
+INICIO
+		escriba "Ingrese su nombre: "
+		llamar nueva_linea
+		lea e
+		ESCRIBA "ingrese un caracter del menu"
+		LLAMAR Nueva_Linea
+		ESCRIBA "S para la Suma"
+		LLAMAR Nueva_Linea
+		ESCRIBA "R para la Resta"
+		LLAMAR Nueva_Linea
+		ESCRIBA "D para la division"
+		LLAMAR Nueva_linea
+		ESCRIBA "M para la multiplicacion"
+		llamar nueva_linea
+		escriba "J es para ver otras opciones: "
+		LLAMAR Nueva_linea
+		ESCRIBA "V para victor "
+		ESCRIBA "Caracter distinto a R,S,D,M o V, para terminar "
+		llamar nueva_linea
+	LEA C
+	CASO C
+	'S','s': 
+		ESCRIBA "vamos a la suma"
+		LLAMAR Nueva_linea
+		ESCRIBA "ingrese el primer numero: "
+		LLAMAR Nueva_linea
+		LEA A
+		LLAMAR Nueva_linea 
+		ESCRIBA "ingrese el seghundo numero: "
+		LLAMAR Nueva_linea
+		LEA B 
+		LLAMAR Nueva_linea 
+		CA<-A+B
+		ESCRIBA "la suma es: ",CA
+	'R','r': 
+		ESCRIBA "vamos a restar"
+		LLAMAR Nueva_linea
+		ESCRIBA "ingrese el primer numero: "
+		LLAMAR Nueva_linea
+		LEA A
+		LLAMAR Nueva_linea 
+		ESCRIBA "ingrese el seghundo numero: "
+		LLAMAR Nueva_linea
+		LEA B 
+		LLAMAR Nueva_linea 
+		CA<-A-B
+		ESCRIBA "la resta es:",CA
+	'D','d':
+		ESCRIBA "vamos a dividir"
+		LLAMAR Nueva_linea
+		ESCRIBA "ingrese el primer numero: "
+		LLAMAR Nueva_linea
+		LEA A
+		LLAMAR Nueva_linea 
+		ESCRIBA "ingrese el seghundo numero: "
+		LLAMAR Nueva_linea
+		LEA B 
+		LLAMAR Nueva_linea 
+		CA<-A/B
+		ESCRIBA "la division es:",CA
+	'M','m':
+		ESCRIBA "vamos a multiplicar"
+		LLAMAR Nueva_linea
+		ESCRIBA "ingrese el primer numero"
+		LLAMAR Nueva_linea
+		LEA A
+		LLAMAR Nueva_linea 
+		ESCRIBA "ingrese el seghundo numero"
+		LLAMAR Nueva_linea
+		LEA B 
+		LLAMAR Nueva_linea 
+		CA<-A*B
+		ESCRIBA "la multiplcacion es:",CA
+	'J','j':
+		escriba "Digite la opcion a seleccionar: "
+		llamar nueva_linea
+		escriba "1 Para area triangulo: "
+		llamar nueva_linea
+		escriba "2 para mas opciones: "
+		llamar nueva_linea
+		escriba "50 Para area cuadrado: " 
+		llamar nueva_linea
+		escriba "8 Para area circulo: "
+		llamar nueva_linea
+		lea opcion2
+		caso opcion2
+			1: 
+				escriba "Ingrese el numero para la base: "
+				lea base
+				llamar nueva_linea
+				escriba "Ingrese el valor de la altura: "
+				lea h 
+				area<-(base *h)/2
+				escriba "Area es igual a: ",area
+			50: 
+				escriba "Ingrese el valor de lado1: "
+				lea lado1
+				llamar nueva_linea
+				escriba "Ingrese el valor de lado2 : "
+				lea lado2
+				area<-lado1*lado2
+				escriba "El area es igual a: ", area
+			8:
+				escriba "Ingrese el valor del radio: "
+				lea radio
+				llamar nueva_linea
+				area<-3.14*(radio*radio)
+				escriba "El area es igual a: ", area
+			2:
+					ESCRIBA "ingrese un caracter del menu"
+					LLAMAR Nueva_Linea
+					ESCRIBA "L para contraseña: "
+					LLAMAR Nueva_Linea
+					ESCRIBA "H para nombre: "
+					LLAMAR Nueva_Linea
+					ESCRIBA "P para dia: "
+					LLAMAR Nueva_linea
+						lea opcion3
+						caso opcion3
+				   		'L','l':
+						    escriba "Ingrese su clave: "
+							lea clave
+							llamar nueva_linea
+							mientras (clave<>123) haga
+								escriba "Digite su clave: "
+								lea clave 
+							    fin mientras
+								escriba "La clave es: ",clave 
+						'H','h': 
+							escriba "Ingrese su nombre1: "
+							lea nombre1
+							llamar nueva_linea
+							escriba "Su nombre es: ",nombre1
+						'P','p': 
+							escriba "Hoy es jueves! "
+						sino: 
+						escriba "Opcion invalida! "
+						fin caso	
+		fin caso
+	'V','v': 
+		ESCRIBA "Victor "
+	SINO:
+		ESCRIBA "opcion invalida"
+		llamar nueva_linea
+	FIN CASO
+	fin 
+	escriba " Su nombre es: ", e
+FIN
