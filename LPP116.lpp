@@ -1,0 +1,16 @@
+entero i,p
+inicio
+	i<-5
+	para i<-5 hasta 15 haga
+		escriba "Silencio! "
+		llamar nueva_linea
+		i<-i+1
+		escriba i
+	fin para
+	mientras i<=5 haga 
+		escriba "Silencio! "
+		llamar nueva_linea
+		i<-i+1
+		escriba i
+	fin mientras	
+fin	
