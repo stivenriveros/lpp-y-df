@@ -1,0 +1,7 @@
+entero n
+cadena [15]x
+inicio
+	x<- "Victor Rincon"
+	n<- longitud (x)
+	escriba "Longitud (caracter) de ",x," es " ,n
+fin

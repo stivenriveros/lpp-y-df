@@ -1,0 +1,11 @@
+entero n
+real r
+inicio
+	llamar inicializar_aleatorio ()
+	repita
+	r<-aleatorio()*10
+	n<-r
+	escriba "El numero generado es: ",r
+	llamar nueva_linea
+	hasta n=0
+fin

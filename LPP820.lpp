@@ -1,0 +1,22 @@
+caracter resp
+entero gana,pierde
+real nota
+inicio
+ gana<-0
+ pierde<-0
+ repita
+ 	escriba "Ingrese la nota "
+ 	lea nota
+ 		si (nota>=60) entonces
+ 			gana<-gana+1
+ 		sino
+ 			pierde<-pierde+1
+ 		fin si
+ repita	
+	escriba "Desea continuar? S/N "
+	lea resp 
+    hasta (resp='N') o (resp='n')
+ hasta (resp='N')
+ 	escriba " Total aprobados " ,gana
+ 	escriba " Total quedados " ,pierde 
+fin

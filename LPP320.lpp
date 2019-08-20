@@ -1,0 +1,68 @@
+entero numero1, suma
+cadena [2] ty
+caracter i, c
+real numero2,a,a,h,numero
+inicio
+	mientras (numero1<123) o (numero1>123) haga
+		escriba "Escriba contraseña: "
+		llamar nueva_linea
+		lea numero1
+		llamar nueva_line
+	fin mientras
+	llamar nueva_linea
+	escriba "Registro existoso"
+	llamar nueva_linea
+	
+	escriba "Ingrese una cadena de caracter: "
+	lea c
+		si (c='c') entonces 
+			escriba "sumar dos numeros"
+			llamar nueva_linea
+			escriba "Ingrese el primer numero: "
+			lea a
+			escriba "Ingrese el segundo numero: "
+			lea b 
+			h<-a+b
+			escriba "La suma de: ",a," mas ",b," es: " ,h
+			llamar nueva linea
+			
+				sino
+				escriba "Restar dos numeros: "
+				llamar nueva_linea
+				escriba "Ingrese el primer numero: "
+				lea a
+				escriba "Ingrese el segundo numero: "
+				lea b 
+				h<-a+b
+				escriba "La resta de: ",a," menos ",b," es: " ,h
+				
+			llamar nueva_linea
+			escriba "Ingrese un caracter: "
+			lea i
+			
+			numero<-0
+			suma<-1
+			escriba "sumatoria de 1 a 10 "
+			llamar nueva_linea
+			mientras numero<10 haga
+			numero<-numero+1
+			suma<-numero+suma
+			fin mientras
+			llamar nueva_linea
+			escriba suma 
+			llamar nueva_linea
+			
+			llamar nueva_linea
+			escriba "Ingrese un numero real "
+			lea numero2
+			llamar nueva_linea
+			escriba "El entero que usted digito fue: " ,numero1
+			llamar nueva_linea
+			escriba "La cadena de caracteres que usted digito fue: " ,c
+			llamar nueva_linea
+			escriba "El caracter que usted digito fue: " ,i
+			llamar nueva_linea
+			escriba "El numero real que usted digito fue: " ,numero2
+		fin si
+fin
+			
