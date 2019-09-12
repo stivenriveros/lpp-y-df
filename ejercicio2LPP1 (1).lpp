@@ -1,0 +1,11 @@
+real a,b,c
+inicio
+escriba "Suma de dos numeros: "
+A<-15
+B<-10
+C<-A+B
+llamar nueva_linea
+escriba "La suma de a + b es: " 
+llamar nueva_linea
+escriba c
+fin
